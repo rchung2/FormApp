@@ -81,6 +81,9 @@ angular.module('myApp.form',['ngRoute'])
         }
 
         function checkCaptcha() {
+            if ($(".rc-anchor-logo-potrait").length === 0) {
+                return true;
+            }
             var response = grecaptcha.getResponse();
             if (response.length == 0) {
                 $scope.errorFields.push('Are you a Robot?');
@@ -142,13 +145,8 @@ angular.module('myApp.form',['ngRoute'])
                 description: $scope.comment
             }
 
-            // var image = getBase64Image($scope.fileToUpload);
 
             ImageFactory.saveImage($('#fileToUpload')[0].files[0]);
-            console.log('SENDING REQUEST', $scope.fileToUpload, $('#fileToUpload')[0].files[0]);
-
-            var response = grecaptcha.getResponse();
-            console.log(response);
 
             $http.post('/validated', obj).then(function(res) {
                 $location.path('/validated');
