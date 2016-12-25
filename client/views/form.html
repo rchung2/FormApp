@@ -4,7 +4,7 @@
     </div>
 
     <div class="form-group error-box-container" ng-if="errorFields.length > 0">
-        <ul class="error-box">
+        <ul class="error-box" id="error-list">
             <li ng-repeat="invalid in errorFields">
                 {{invalid}}
             </li>
@@ -55,7 +55,7 @@
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select ng-model="education" id = "education" style="width: 200px;" class="form-control selectpicker">
-                    <option value=" " disabled selected>Please select education</option>
+                    <option value=" " disabled>Please select education</option>
                     <option value = "High School"> High School</option>
                     <option value = "Bachelor of Science (BS)">Bachelor of Science (BS)</option>
                     <option value = "Master of Science (MS)">Master of Science (MS)</option>
@@ -212,8 +212,7 @@
         <label class="col-xs-5 control-label">Image </label>
         <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                <input type="file" class="form-control" ng-model="fileToUpload" style="width:300px;" id="fileToUpload" accept="image/gif, image/jpeg, image/png">
+                <input style = "margin-top:5px;" type="file"  ng-model="fileToUpload" style="width:240px;" id="fileToUpload" accept="image/*">
             </div>
         </div>
     </div>
@@ -247,3 +246,9 @@
     </div>
 
 </form>
+
+<footer class="footer">
+    <div class="container">
+        <br><p class="text-center" style="font-weight:bold">Robert Chung - rchung2@mail.sfsu.edu</p>
+    </div>
+</footer>
