@@ -1,6 +1,6 @@
 <form class="row form-horizontal">
     <div class="form-group">
-        <label class="col-xs-4 control-label"> * = required field</label>
+        <label class="col-xs-5 control-label"> * = required field</label>
     </div>
 
     <div class="form-group error-box-container" ng-if="errorFields.length > 0">
@@ -12,8 +12,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">First Name *</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">First Name *</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                 <input name="firstName" id="firstNameField" ng-model="firstName" placeholder="John" class="form-control" style="width: 150px;" value="" type="text" ng-required>
@@ -23,8 +23,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">Last Name *</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">Last Name *</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                 <input ng-model="lastName"  id="lastNameField" placeholder="Smith" class="form-control" style="width: 150px;" value="" type="text" required>
@@ -35,8 +35,8 @@
 
     <!-- radio checks -->
     <div class="form-group">
-        <label class="col-xs-4 control-label">Gender</label>
-        <div class="col-xs-4">
+        <label class="col-xs-5 control-label">Gender</label>
+        <div class="col-xs-5">
             <div class="radio">
                 <label>
                     <input id="maleGenderField" type="radio" ng-model="gender" value="Male">Male
@@ -50,8 +50,8 @@
     </div>
 
     <div class="form-group" >
-        <label class="col-xs-4 control-label">Highest Education</label>
-        <div class="col-xs-4 selectContainer">
+        <label class="col-xs-5 control-label">Highest Education</label>
+        <div class="col-xs-5 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select ng-model="education" id = "education" style="width: 200px;" class="form-control selectpicker">
@@ -67,8 +67,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">E-Mail *</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">E-Mail *</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                 <input ng-model="email" id = "emailField" placeholder="JohnSmith@gmail.com" class="form-control" style="width: 240px;" value="" type="text" required>
@@ -79,8 +79,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">Phone Number *</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">Phone Number *</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
                 <input ng-model="phone" id = "phoneField" placeholder="510-552-1319" style="width: 115px;" class="form-control" value=""  type="text" required>
@@ -91,8 +91,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">Address *</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">Address *</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                 <input ng-model="address" id = "addressField" placeholder="1 Infinity Drive" class="form-control" style="width: 240px;" value="" type="text" required>
@@ -103,8 +103,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">City *</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">City *</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                 <input ng-model="city" id = "cityField" placeholder="San Francisco" class="form-control" style="width: 240px;" value="" type="text" required>
@@ -115,8 +115,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">State *</label>
-        <div class="col-xs-4 selectContainer">
+        <label class="col-xs-5 control-label">State *</label>
+        <div class="col-xs-5 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                 <select ng-model="state" ng-model="state" id = "stateField" class="form-control selectpicker" style="width: 155px;" required>
@@ -179,8 +179,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">Zip Code *</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">Zip Code *</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                 <input ng-model="zip" id = "zipField" placeholder="91158" class="form-control" style="width: 65px;" value="" type="text" required>
@@ -191,8 +191,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">Category *</label>
-        <div class="col-xs-4 selectContainer">
+        <label class="col-xs-5 control-label">Category *</label>
+        <div class="col-xs-5 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select ng-model="category" id = "categoryField" class="form-control selectpicker" style="width: 170px;" required>
@@ -209,8 +209,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">Image </label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">Image </label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <input type="file" class="form-control" ng-model="fileToUpload" style="width:300px;" id="fileToUpload" accept="image/gif, image/jpeg, image/png">
@@ -219,8 +219,8 @@
     </div>
 
     <div class="form-group">
-        <label class="col-xs-4 control-label">Description</label>
-        <div class="col-xs-4 inputGroupContainer">
+        <label class="col-xs-5 control-label">Description</label>
+        <div class="col-xs-5 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon" class ="form-control"><i class="glyphicon glyphicon-pencil"></i></span>
                 <textarea style="height: 125px; width: 400px;" class = "form-control" ng-model="comment"></textarea>
@@ -228,13 +228,13 @@
         </div>
     </div>
 
-    <div class="form-group" style="display:flex; justify-content: center; margin-left:4em;" >
-        <div class="g-recaptcha col-xs-4" id="rcaptcha" data-sitekey="6LdCxQ8UAAAAAHHpO_IuZs7ukRVEmbeg3X6owJP7"></div>
+    <div class="form-group" style="display:flex; justify-content: center; margin-left:15%;" >
+        <div class="g-recaptcha col-xs-5" id="rcaptcha" data-sitekey="6LdCxQ8UAAAAAHHpO_IuZs7ukRVEmbeg3X6owJP7"></div>
         <span id="captcha" style="margin-left:100px;color:red" />
     </div>
 
     <div class="form-group" style="text-align: center;">
-        <form action="#" class="col-xs-4" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+        <form action="#" class="col-xs-5" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
             <input type="checkbox" ng-model="disclosureTerms" value="check" id="agree" /> I have read and agree to the <a href="terms.html">Terms and Conditions and Privacy Policy</a>
         </form>
     </div>
