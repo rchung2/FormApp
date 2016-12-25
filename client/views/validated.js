@@ -13,6 +13,7 @@ angular.module('myApp.validated',['ngRoute'])
 
         $http.get('/formReview').then(function(res) {
             $scope.form = res.data;
+            getGeoCode();
         })
 
         $scope.form.image = ImageFactory.getImage();
@@ -26,5 +27,30 @@ angular.module('myApp.validated',['ngRoute'])
             }
 
             reader.readAsDataURL($scope.form.image);
+        }
+
+        function getGeoCode(result, status) {
+            var data = $scope.form.address + "," + $scope.form.city + ',US';
+            console.log(data);
+            var map = new google.maps.Map(document.getElementById('map'), {
+                mapTypeId: google.maps.MapTypeId.TERRAIN,
+                zoom: 6
+            });
+
+            var geocoder = new google.maps.Geocoder();
+
+            geocoder.geocode({
+                    'address': data
+                },
+                function(results, status) {
+                    if(status == google.maps.GeocoderStatus.OK) {
+                        new google.maps.Marker({
+                            position: results[0].geometry.location,
+                            map: map
+                        });
+                        map.setCenter(results[0].geometry.location);
+                    }
+                }
+            );
         }
     });
