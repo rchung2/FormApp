@@ -81,7 +81,8 @@ angular.module('myApp.form',['ngRoute'])
         }
 
         function checkCaptcha() {
-            if ($(".rc-anchor-logo-potrait").length === 0) {
+            console.log($('.rc-anchor-logo-portrait').length);
+            if ($("#rcaptcha").children().length === 0) {
                 return true;
             }
             var response = grecaptcha.getResponse();
