@@ -1,0 +1,19 @@
+.error-box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-right: 15px;
+}
+
+.error-box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.error-box > li {
+    color: red;
+    font-weight: 600;
+}

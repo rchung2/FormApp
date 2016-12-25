@@ -1,0 +1,98 @@
+<div>
+    <form class="well form-horizontal" method="post"  id="contact_form">
+
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend style="margin:0 auto;">Thanks for filling out the form, please verify your submission </legend><br>
+
+            <div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="control-label">First Name:</label>
+                <span style="padding-top:50px;">{{form.firstName}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Last Name:</label>
+                <span style="margin-top:1cm;">{{form.lastName}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Gender:</label>
+                <span style="margin-top:1cm;">{{form.gender}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Education:</label>
+                <span style="margin-top:1cm;">{{form.education}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Phone Number:</label>
+                <span style="margin-top:1cm;">{{form.phone}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Address:</label>
+                <span style="margin-top:1cm;">{{form.address}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">City:</label>
+                <span style="margin-top:1cm;">{{form.city}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">State:</label>
+                <span style="margin-top:1cm;">{{form.state}}</span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Category:</label>
+                <span style="margin-top:1cm;">{{form.category}}</span>
+            </div>
+
+            <div class="form-group" >
+                <label class="control-label">Description:</label>
+                <span style="width:80%; text-align:left;">{{form.description}}</span>
+            </div>
+
+            </div>
+            <img id="blah" src="#" alt="your image" ng-if="form.image"/>
+
+            <style type="text/css">
+                div#map { margin: 0 auto 0 auto; }
+            </style>
+            <div id="map" style="width:750px;height:500px;"></div>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ZO9VEdqHIi8iZSeMPhfL7j7SWM2J8ow&callback=myMap" type="text/javascript"></script>
+
+            <script type="text/javascript">
+                var data = "";
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    mapTypeId: google.maps.MapTypeId.TERRAIN,
+                    zoom: 6
+                });
+
+                var geocoder = new google.maps.Geocoder();
+
+                geocoder.geocode({
+                            'address': data
+                        },
+                        function(results, status) {
+                            if(status == google.maps.GeocoderStatus.OK) {
+                                new google.maps.Marker({
+                                    position: results[0].geometry.location,
+                                    map: map
+                                });
+                                map.setCenter(results[0].geometry.location);
+                            }
+                        });
+
+            </script>
+
+        </fieldset>
+    </form>
+</div>
