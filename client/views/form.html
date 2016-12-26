@@ -54,8 +54,8 @@
         <div class="col-xs-5 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                <select ng-model="education" id = "education" style="width: 200px;" class="form-control selectpicker">
-                    <option value=" " disabled>Please select education</option>
+                <select ng-model="education" id = "education" style="width: 210px;" class="form-control selectpicker">
+                    <option data-hidden="true" value="" disabled>Please select education</option>
                     <option value = "High School"> High School</option>
                     <option value = "Bachelor of Science (BS)">Bachelor of Science (BS)</option>
                     <option value = "Master of Science (MS)">Master of Science (MS)</option>
@@ -119,8 +119,8 @@
         <div class="col-xs-5 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                <select ng-model="state" ng-model="state" id = "stateField" class="form-control selectpicker" style="width: 155px;" required>
-                    <option value=" "disabled selected >Please select state</option>
+                <select ng-model="state" ng-model="state" id = "stateField" class="form-control selectpicker" style="width: 220px;" required>
+                    <option data-hidden="true" value="" disabled>Please select state</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -195,8 +195,8 @@
         <div class="col-xs-5 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                <select ng-model="category" id = "categoryField" class="form-control selectpicker" style="width: 170px;" required>
-                    <option value=" " disabled selected>Please select category</option>
+                <select ng-model="category" id = "categoryField" class="form-control selectpicker" style="width: 220px;" required>
+                    <option data-hidden="true" value="" disabled>Please select category</option>
                     <option value = "Spillage">Spillage</option>
                     <option value = "Broken Pipe">Broken Pipe</option>
                     <option value = "Electric Hazard">Electric Hazard</option>
@@ -234,7 +234,7 @@
 
     <div class="form-group" style="text-align: center;">
         <form action="#" class="col-xs-5" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
-            <input type="checkbox" ng-model="disclosureTerms" value="check" id="agree" /> I have read and agree to the <a href="terms.html">Terms and Conditions and Privacy Policy</a>
+            <input type="checkbox" ng-model="disclosureTerms" value="check" id="agree" /> I have read and agree to the <a href="/terms" target="_blank">Terms and Conditions and Privacy Policy</a>
         </form>
     </div>
 

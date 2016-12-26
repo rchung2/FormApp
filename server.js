@@ -27,5 +27,9 @@ app.get('/formReview', function(req, res) {
    res.send(data);
 });
 
+app.get('/terms', function(req, res) {
+   res.send("<html><head><Title>Terms and Conditions</Title></head></html>");
+});
+
 app.listen(port);
 console.log("Server now listening on port " + port);
