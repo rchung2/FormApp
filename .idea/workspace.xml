@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6e29905-0100-469d-b6de-ecdd678979e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/form.html" afterPath="$PROJECT_DIR$/client/views/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/validated.html" afterPath="$PROJECT_DIR$/client/views/validated.html" />
     </list>
     <ignored path="EventTaskApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,9 +104,8 @@
       <file leaf-file-name="form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-              <caret line="30" column="18" selection-start-line="6" selection-start-column="44" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#form#0;n#!!top" expanded="true" />
@@ -285,12 +283,12 @@
       <workItem from="1482619143297" duration="9219000" />
       <workItem from="1482639536446" duration="179000" />
       <workItem from="1482639729462" duration="11130000" />
-      <workItem from="1482652974194" duration="13059000" />
+      <workItem from="1482652974194" duration="13869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34999000" />
+    <option name="totallyTimeSpent" value="35809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2189" y="280" width="1756" height="1135" extended-state="0" />
@@ -694,9 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <caret line="30" column="18" selection-start-line="6" selection-start-column="44" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="90">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#form#0;n#!!top" expanded="true" />
