@@ -33,7 +33,7 @@ angular.module('myApp.form',['ngRoute'])
         }
 
         function checkPhone() {
-            if ((! /^([0-9]{3}-[0-9]{3}-[0-9]{4})$/.test($scope.phone))) {
+            if ((! /^([0-9]{3}-[0-9]{3}-[0-9]{4})$/.test($scope.phone)) && (! /^[0-9]{10}$/.test($scope.phone))) {
                 $scope.errorFields.push('Invalid Phone Number');
                 return false;
             }

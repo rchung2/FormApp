@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-var data = {"firstName":"ADFDA","lastName":"ADFAF","email":"BOB@gmail.com","phone":"415-222-2222","address":"adsff","city":"adfaf","state":"CA","zip":"94015","category":"Broken Pipe", "gender": "male", "education": "High School Diploma", "description": 'TEST DESCRTIPTION'};
+var data = '';
 
 app.get('/', function(req, res) {
   res.redirect('/');
